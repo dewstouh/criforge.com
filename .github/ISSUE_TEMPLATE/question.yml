@@ -1,0 +1,66 @@
+name: Question
+description: Ask a question about CriForge
+title: "[QUESTION] "
+labels: ["question", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your question! Before submitting, please check if your question is already answered in our documentation.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Pre-flight checklist
+      description: Please check the following before submitting your question
+      options:
+        - label: I have searched existing issues and discussions
+          required: true
+        - label: I have read the project documentation
+          required: true
+        - label: I have tried to find the answer in the README and other documentation
+          required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: A clear and concise description of your question.
+      placeholder: What would you like to know?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to accomplish? What have you already tried?
+      placeholder: I'm trying to... I've already tried...
+    validations:
+      required: true
+
+  - type: textarea
+    id: code-example
+    attributes:
+      label: Code example (if applicable)
+      description: If your question involves code, please provide a minimal example.
+      render: typescript
+      placeholder: |
+        // Your code example here
+        export default function MyComponent() {
+          return <div>Hello World</div>;
+        }
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Node.js version, operating system, browser, etc.
+      placeholder: "Node.js 18.0.0, Windows 11, Chrome 120"
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about your question here.
+      placeholder: Any additional information that might help us understand your question better.

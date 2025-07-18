@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord Community
+    url: https://discord.gg/criforge
+    about: Join our Discord community for real-time discussions and support
+  - name: Email Support
+    url: mailto:contact@justdiego.com
+    about: Contact us directly for sensitive issues or business inquiries
+  - name: GitHub Discussions
+    url: https://github.com/dewstouh/criforge.com/discussions
+    about: Ask questions and discuss ideas with the community

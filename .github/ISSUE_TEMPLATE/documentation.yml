@@ -1,0 +1,65 @@
+name: Documentation Issue
+description: Report an issue with documentation or suggest improvements
+title: "[DOCS] "
+labels: ["documentation", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve our documentation! Please provide as much detail as possible.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Pre-flight checklist
+      description: Please check the following before submitting your documentation issue
+      options:
+        - label: I have searched existing issues to make sure this hasn't been reported before
+          required: true
+        - label: I have checked the current documentation
+          required: true
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Type of documentation issue
+      description: What type of documentation issue is this?
+      options:
+        - Missing documentation
+        - Incorrect documentation
+        - Unclear documentation
+        - Outdated documentation
+        - Typo or formatting issue
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: doc-location
+    attributes:
+      label: Documentation location
+      description: Where in the documentation is the issue? (URL, file path, section name)
+      placeholder: "https://github.com/dewstouh/criforge.com/blob/main/README.md"
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue description
+      description: A clear and concise description of the documentation issue.
+      placeholder: The documentation says... but it should say...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: Suggested fix
+      description: If you have a suggestion for how to fix this issue, please describe it here.
+      placeholder: This could be fixed by...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the documentation issue here.
+      placeholder: Any additional information that might help us understand the issue better.
