@@ -12,6 +12,9 @@ coverage
 .env
 .env.test
 
+# instructions
+.github/instructions
+
 # next.js
 .next/
 out/
