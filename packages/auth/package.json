@@ -5,6 +5,8 @@
   "main": "index.js",
   "exports": {
     ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./server": "./src/server.ts",
     "./keys": "./src/keys.ts"
   },
   "scripts": {
