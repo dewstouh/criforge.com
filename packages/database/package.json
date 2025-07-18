@@ -1,8 +1,10 @@
 {
-  "name": "@repo/database",
+  "name": "@criforge/database",
   "version": "1.0.0",
+  "description": "Database package for Criforge",
   "exports": {
-    ".": "./src/client.ts"
+    ".": "./src/index.ts",
+    "./keys": "./src/keys.ts"
   },
   "scripts": {
     "db:migrate:deploy": "prisma migrate deploy",
@@ -18,11 +20,13 @@
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@prisma/client": "latest"
+    "@prisma/client": "latest",
+    "@t3-oss/env-nextjs": "^0.13.8",
+    "zod": "^4.0.5"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@criforge/eslint-config": "workspace:*",
+    "@criforge/typescript-config": "workspace:*",
     "eslint": "^8.57.0",
     "prisma": "latest",
     "rimraf": "^5.0.5",

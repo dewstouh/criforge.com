@@ -16,6 +16,7 @@
     "lint": "turbo run lint"
   },
   "devDependencies": {
+    "@types/node": "^20.19.8",
     "prettier": "^3.2.5",
     "prisma": "latest",
     "tsx": "4.19.1",

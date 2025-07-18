@@ -8,10 +8,15 @@ node_modules
 # testing
 coverage
 
+# environments
+.env
+.env.test
+
 # next.js
 .next/
 out/
-build
+build/
+dist/
 
 # misc
 .DS_Store
